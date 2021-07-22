@@ -40,5 +40,11 @@ app.listen(PORT, IP, () => {
 /* =================================================================================================== */
 
 const authRoutes = require('./routes/auth');
+const restRoutes = require('./routes/restaurant');
+const menuRoutes = require('./routes/menu');
+const itemRoutes = require('./routes/item');
 
 app.use('/auth', authRoutes);
+app.use('/restaurant', restRoutes);
+app.use('/menu', menuRoutes);
+app.use('/item', itemRoutes);
